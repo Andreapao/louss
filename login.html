@@ -1,0 +1,203 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>LOU</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Bootstrap"/>
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<link href="css/bootstrap-3.1.1.min.css" rel='stylesheet' type='text/css' />
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<!-- Custom Theme files -->
+<link href="css/style.css" rel='stylesheet' type='text/css' />
+<link rel="stylesheet" href="css/jquery.countdown.css" />
+
+<link href='//fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700' rel='stylesheet' type='text/css'>
+
+<link href="css/font-awesome.css" rel="stylesheet"> 
+
+<script>
+$(document).ready(function(){
+    $(".dropdown").hover(            
+        function() {
+            $('.dropdown-menu', this).stop( true, true ).slideDown("fast");
+            $(this).toggleClass('open');        
+        },
+        function() {
+            $('.dropdown-menu', this).stop( true, true ).slideUp("fast");
+            $(this).toggleClass('open');       
+        }
+    );
+});
+</script>
+</head>
+<body>
+<nav class="navbar navbar-default" role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="index.html">LOU</a>
+        </div>
+        <!--/.navbar-header-->
+        <div class="navbar-collapse collapse" id="bs-example-navbar-collapse-1" style="height: 1px;">
+            <ul class="nav navbar-nav">
+             <li class="dropdown">
+                    <a href="login.html"><i class="fa fa-user"></i><span>Iniciar Sesion</span></a>
+                </li>
+                <li class="dropdown">
+                    <a href="register.html"><i class="fa fa-list"></i><span>Registrate</span></a>
+                      
+                </li>
+             <li class="dropdown">
+                    <a href="evento.html"><i class="fa fa-calendar"></i><span>Crear Evento</span></a>
+                     
+                </li>
+               
+                
+               
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-globe"></i><span>Idioma</span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#"><span><i class="flags us"></i><span>English</span></span></a></li>
+                        <li><a href="#"><span><i class="flags peru"></i><span>Español</span></span></a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-search"></i><span>Search</span></a>
+                    <ul class="dropdown-menu search-form">
+                       <form>        
+                            <input type="text" class="search-text" name="s" placeholder="Search...">    
+                            <button type="submit" class="search-submit"><i class="fa fa-search"></i></button>
+                       </form>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="clearfix"> </div>
+      </div>
+        <!--/.navbar-collapse-->
+</nav>
+<nav class="navbar nav_bottom" role="navigation">
+ <div class="container">
+ <!-- Brand and toggle get grouped for better mobile display -->
+  <div class="navbar-header nav_2">
+      <button type="button" class="navbar-toggle collapsed navbar-toggle1" data-toggle="collapse" data-target="#bs-megadropdown-tabs">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#"></a>
+   </div> 
+   <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-megadropdown-tabs">
+        <ul class="nav navbar-nav nav_1">
+            <li><a href="index.html">Hola!!</a></li>
+            <li><a href="nosotros.html">Nosotros</a></li>
+            <li class="dropdown mega-dropdown active">
+            <a href="#event">Eventos</a>
+             <li class="dropdown">
+              <a href="#event" class="dropdown-toggle" data-toggle="dropdown">Eventos<span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="#">Categoría</a></li>
+                <li><a href="#">Tipo de evento</a></li>
+                <li><a href="#">Fecha</a></li>
+              </ul>
+            </li>
+            
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Más Información<span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="terms.html">Como funciona</a></li>
+                <li><a href="shortcodes.html">Precios</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Ayuda<span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="terms.html">¿Donde estan mis entradas?</a></li>
+                <li><a href="shortcodes.html">Como ponerme en contacto con el organizador del evento</a></li>
+              </ul>
+            </li>
+            </li>
+            
+            <li><a href="blog.html">Blog</a></li>
+           
+            <li class="last"><a href="contact.html">Contacto</a></li>
+        </ul>
+     </div><!-- /.navbar-collapse -->
+   </div>
+</nav>
+<!-- banner -->
+  <div class="courses_banner"></div>
+    <!-- //banner -->
+	<div class="courses_box1">
+	   <div class="container">
+
+	   	  <form class="login">
+	    	<p class="lead">Bienvenidos!</p>
+		    <div class="form-group">
+			    <input autocomplete="off" type="text" name="log_username" class="required form-control" placeholder="Usuario">
+		    </div>
+
+		    <div class="form-group">
+			    <input autocomplete="off" type="password" class="password required form-control" placeholder="Contraseña" name="log_password">
+		    </div>
+		    <a href="index.html">
+            <button type="button" class="btn btn-block login-social-link "><i class="fa fa-lock "></i> INGRESAR</button>
+          </a>
+	        <p>No tienes cuenta? <a href="register.html" title="Sign Up">Registrate</a></p>
+		 </form>
+	   </div>
+	</div><div class="footer">
+        <div class="container">
+            <div class="col-md-3 grid_4">
+               <h2>LOU</h2> 
+               <p><a href="#">Nosotros</a></p>
+               <p><a href="#">Como funciona</a></p>
+               <p><a href="#">Mapa de sitio</a></p>
+                  
+            </div>
+            <div class="col-md-3 grid_4">
+               <h2>Ubicación</h2>
+                <p>Av. Universitaria 1801 <br>
+San Miguel, Lima 32, Lima - Perú <br>
+Teléfono: 626-2000 anexos 5754 y 5750</p>
+            </div>
+            <div class="col-md-3 grid_4">
+               <h2>Contáctanos</h2>
+                <address>
+                 
+                    <abbr>Telefono : </abbr> (01)-3666433
+                    <br>
+                    <abbr>Email : </abbr> <a href="mailto@example.com">lou@gmail.com</a>
+               </address>
+               <a href="contact.html" class="footer_buton">Escríbenos</a>
+            </div>
+            <div class="col-md-3 grid_4">
+               <h2>Redes sociales</h2>
+                <ul class="social-nav icons_2 clearfix">
+                    <li><a href="#" class="twitter"><i class="fa fa-twitter"></i></a></li>
+                    <li><a href="#" class="facebook"> <i class="fa fa-facebook"></i></a></li>
+                    <li><a href="#" class="google-plus"><i class="fa fa-google-plus"></i></a></li>
+                 </ul>
+           </div>
+            <div class="clearfix"> </div>
+            <div class="copy">
+               <p>Copyright © 2016 Tecnología 4  </p>
+               <!--  
+               | Design by <a href="http://w3layouts.com/" target="_blank">W3layouts</a> </p>
+               -->
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>	
